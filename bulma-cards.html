@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards — Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <style>
+    .card-component {
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-component:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .card-component .card-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-component .content {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <strong>← Back to Home</strong>
+      </a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-2 has-text-centered">Responsive Card Components</h1>
+      <p class="subtitle is-5 has-text-centered mb-6">
+        Built with Bulma — cards stack on mobile and display in a grid on larger screens.
+      </p>
+
+      <div class="columns is-multiline">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/mountain/600/450" alt="Mountain landscape">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Mountain Retreat</p>
+              <p class="subtitle is-6">Nature &amp; Adventure</p>
+              <div class="content">
+                Escape to serene mountain trails and breathtaking views.
+                Perfect for hikers and nature lovers seeking peace.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/city/600/450" alt="City skyline">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Urban Explorer</p>
+              <p class="subtitle is-6">City &amp; Culture</p>
+              <div class="content">
+                Discover vibrant cityscapes, museums, and local cuisine.
+                Experience the energy of metropolitan life.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/beach/600/450" alt="Beach sunset">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Coastal Getaway</p>
+              <p class="subtitle is-6">Beach &amp; Relaxation</p>
+              <div class="content">
+                Unwind on sandy shores with crystal-clear waters.
+                Ideal for sun-seekers and water sports enthusiasts.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/forest/600/450" alt="Forest path">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Forest Trail</p>
+              <p class="subtitle is-6">Wildlife &amp; Hiking</p>
+              <div class="content">
+                Walk through ancient forests filled with wildlife.
+                A peaceful journey through untouched wilderness.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/desert/600/450" alt="Desert dunes">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Desert Safari</p>
+              <p class="subtitle is-6">Adventure &amp; Exploration</p>
+              <div class="content">
+                Ride across golden dunes under vast open skies.
+                An unforgettable adventure in arid landscapes.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <article class="card card-component">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/lake/600/450" alt="Lake reflection">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Lakeside Calm</p>
+              <p class="subtitle is-6">Tranquility &amp; Fishing</p>
+              <div class="content">
+                Enjoy still waters and mirror-like reflections.
+                A quiet retreat for fishing and meditation.
+              </div>
+              <button class="button is-primary is-fullwidth mt-4">Learn More</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Card components built with <strong>Bulma</strong></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end Frameworks Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <style>
+    .hero-body {
+      padding: 4rem 1.5rem;
+    }
+    .demo-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .demo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+  </style>
+</head>
+<body>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">Front-end Frameworks Demo</h1>
+        <p class="subtitle is-4">Responsive cards and grid layouts</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered mb-6">Explore the Demos</h2>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-4">
+          <div class="card demo-card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/bulma/600/450" alt="Bulma cards preview">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Bulma Cards</p>
+              <p class="subtitle is-6">Responsive card components with images and text using Bulma.</p>
+              <a href="bulma-cards.html" class="button is-primary is-fullwidth">View Cards</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card demo-card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/seed/bootstrap/600/450" alt="Bootstrap grid preview">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Bootstrap Grid</p>
+              <p class="subtitle is-6">A responsive 12-column grid layout using Bootstrap.</p>
+              <a href="bootstrap-grid.html" class="button is-link is-fullwidth">View Grid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Built with <strong>Bulma</strong> and <strong>Bootstrap</strong></p>
+    </div>
+  </footer>
+</body>
+</html>
